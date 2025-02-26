@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(to bottom, #fef3c7, #ffffff);
+  color: #1f2937;
+}
+
+h1, h2 {
+  color: #7c3aed; /* Vivid purple */
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #7c3aed;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  padding: 4rem 1rem;
+  scroll-margin-top: 5rem;
+}
+
+.btn-primary {
+  @apply bg-fuchsia-500 text-white py-2 px-6 rounded-lg hover:bg-fuchsia-600 transition-all duration-300;
+}
+
+@media (max-width: 640px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.75rem; }
+  section { padding: 2rem 1rem; }
+}
